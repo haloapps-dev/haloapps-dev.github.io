@@ -9,6 +9,8 @@ https://haloapps-dev.github.io. Plain HTML and CSS, no build step.
 | `/tidify/` | Tidify app page |
 | `/tidify/privacy/` | Tidify privacy policy |
 | `/tidify/terms/` | Tidify terms of use |
+| `/halo-scan/` | Halo Scan app page |
+| `/halo-scan/privacy/` | Halo Scan privacy policy |
 | `/app-ads.txt` | AdMob authorised sellers file |
 
 To add an app, copy the `tidify/` folder, edit the text, and link it from
