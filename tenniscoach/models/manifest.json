@@ -13,6 +13,20 @@
    "min_engine": 1,
    "tier": "any",
    "version": "1.0.1"
+  },
+  {
+   "files": [
+    {
+     "name": "params.json",
+     "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+     "size": 3,
+     "url": "https://haloapps-dev.github.io/tenniscoach/models/ball-detector/1.0.2/params.json"
+    }
+   ],
+   "id": "ball-detector",
+   "min_engine": 1,
+   "tier": "any",
+   "version": "1.0.2"
   }
  ],
  "schema": 1
