@@ -16,12 +16,14 @@
   </header>
   <main class="wrap">
     <h1>Courtella privacy policy</h1>
-    <p class="meta">Effective date: 28 October 2026 &middot; Courtella was called Tennis AI Coach until November 2026 &middot; Published by Halo Apps &middot; Contact: <a href="mailto:haloapps.dev@gmail.com">haloapps.dev@gmail.com</a></p>
+    <p class="meta">Effective date: 28 October 2026 &middot; Updated 2 November 2026 (microphone and two-phone line calls) &middot; Courtella was called Tennis AI Coach until November 2026 &middot; Published by Halo Apps &middot; Contact: <a href="mailto:haloapps.dev@gmail.com">haloapps.dev@gmail.com</a></p>
 <p><strong>In short:</strong> the camera picture is analysed on your
 phone, and your videos, scores and stats are stored only on your phone.
-They leave it only when you save or share a highlight clip yourself. The
-app has no accounts, no ads, no analytics and no crash-reporting SDKs,
-and it never uses the microphone. Its only network use is downloading
+They leave it only when you save or share something yourself, or, in a
+two-phone match, go straight to your other phone over Bluetooth. The
+app has no accounts, no ads, no analytics and no crash-reporting SDKs.
+With <em>Hear the hits</em> on, the microphone times each hit by its
+sound; no sound is recorded, kept or sent. Its only network use is downloading
 <strong>ball-model updates</strong>, which you can turn off, together
 with a <strong>Google Play Integrity</strong> check before a download.</p>
 
@@ -30,6 +32,14 @@ with a <strong>Google Play Integrity</strong> check before a download.</p>
 <li><strong>Camera picture.</strong> While a session runs, the app reads
 the camera picture to find the court and follow the ball. This happens
 on your phone; frames are not stored or sent anywhere.</li>
+<li><strong>Microphone.</strong> If <em>Hear the hits</em> is on (it is
+by default; turn it off in Settings), the app listens while a session
+tracks, to time each hit by its sound. The
+sound is analysed on your phone as it comes in and then discarded: it
+is never recorded, saved or sent, and session videos have no sound. A
+session keeps only how many hit sounds were heard and how far their
+timing sat from the camera's. If you don't allow the microphone,
+tracking still works, a little less well.</li>
 <li><strong>Session videos.</strong> If <em>Record video</em> is on (it
 is by default, so you can save highlights), the session is recorded
 into the app's private storage on your phone. No sound is recorded.</li>
@@ -39,6 +49,12 @@ bounced) and your settings.</li>
 <li><strong>Highlight clips.</strong> When you tap <em>Save clip</em>, a
 short clip is saved to your phone's Movies folder (Movies / Courtella;
 Movies / Tennis AI Coach for clips saved before the rename). From there it goes only where you share it.</li>
+<li><strong>Two-phone match reports</strong> (Android). After a match
+played with two phones, each phone saves a debug report to Downloads /
+Courtella: both phones' match logs and this phone's session (player
+names, score, the shots and bounces each phone measured). It stays there until you delete it or
+share it yourself, for example to send it to us when a call went
+wrong.</li>
 </ul>
 <p>We never receive, see or store any of this. We have no servers that
 hold your videos or sessions, and the app opts out of automatic cloud
@@ -55,6 +71,13 @@ information about you or your sessions. Like any website, GitHub's
 servers receive your IP address and basic request details to deliver
 the files (see <a href="https://docs.github.com/site-policy/privacy-policies">GitHub's
 privacy policies</a>). We do not log or receive them.</p>
+<h3 id="two-phones">Between your own two phones</h3>
+<p>If you play a match with two phones (<em>Two phones</em> on the home
+screen, Android), they connect directly to each other over Bluetooth,
+with no internet and no server in between. They exchange what the
+match needs: the player names, the score and your taps, the shots and
+bounces each phone measured, and timing pings. Video, camera pictures
+and sound are never sent. Nothing of this reaches us.</p>
 <h3 id="play-integrity">Google Play Integrity check</h3>
 <p>Before a model package is downloaded, the app asks Google Play to
 confirm that it is the genuine app installed from Google Play on a
@@ -72,11 +95,17 @@ built into the app.</p>
 <h2 id="permissions">3. Permissions</h2>
 <ul>
 <li><strong>Camera:</strong> to film the court and follow the ball.</li>
+<li><strong>Microphone:</strong> only for <em>Hear the hits</em>, as
+described above. You can say no or turn the setting off.</li>
+<li><strong>Nearby devices (Bluetooth)</strong>, Android: only to pair
+and connect two phones for a two-phone match. On Android 10 and 11 the
+system calls this the location permission, because Bluetooth scanning
+needs it there; the app never reads or works out where you are.</li>
 <li><strong>Internet:</strong> only for the model updates and the check
 above.</li>
-<li>The app does not ask for the microphone, location, contacts or your
-photo library. Saving a clip to Movies needs no extra permission on
-Android 10 and later.</li>
+<li>Apart from that, the app does not ask for location, contacts or
+your photo library. Saving a clip to Movies or a report to
+Downloads needs no extra permission on Android 10 and later.</li>
 </ul>
 
 <h2 id="what-we-do-not-do">4. What we do not do</h2>
