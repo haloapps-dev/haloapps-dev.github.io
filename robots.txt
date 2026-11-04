@@ -1,0 +1,14 @@
+# Search and AI-search crawlers are welcome. Redirect links under /go/ are not pages.
+User-agent: *
+Allow: /
+Disallow: /go/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /go/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /go/
+
+Sitemap: https://haloapps-dev.github.io/sitemap.xml

@@ -12,6 +12,10 @@ https://haloapps-dev.github.io. Plain HTML and CSS, no build step.
 | `/halo-scan/` | Halo Scan app page |
 | `/halo-scan/privacy/` | Halo Scan privacy policy |
 | `/app-ads.txt` | AdMob authorised sellers file |
+| `/robots.txt`, `/sitemap.xml` | Crawler rules (OAI-SearchBot and Bingbot welcome, `/go/` excluded) and page list |
+| `/<key>.txt` | IndexNow key file; ping https://api.indexnow.org/indexnow after page changes |
 
 To add an app, copy the `tidify/` folder, edit the text, and link it from
 `index.html`. Keep `app-ads.txt` at the root.
+
+When you add a page, add it to `sitemap.xml` too.
