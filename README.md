@@ -11,6 +11,7 @@ https://haloapps-dev.github.io. Plain HTML and CSS, no build step.
 | `/tidify/terms/` | Tidify terms of use |
 | `/halo-scan/` | Halo Scan app page |
 | `/halo-scan/privacy/` | Halo Scan privacy policy |
+| `/tailtick/privacy.html` | Tailtick privacy policy (linked from the app, so keep this path) |
 | `/app-ads.txt` | AdMob authorised sellers file |
 | `/robots.txt`, `/sitemap.xml` | Crawler rules (OAI-SearchBot and Bingbot welcome, `/go/` excluded) and page list |
 | `/<key>.txt` | IndexNow key file; ping https://api.indexnow.org/indexnow after page changes |
