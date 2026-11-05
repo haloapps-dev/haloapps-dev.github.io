@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to measure your tennis serve speed with a phone | Courtella</title>
+  <meta name="description" content="How phone apps measure tennis serve speed from video, why radar guns and apps disagree, how big the error really is, and how to film so the number is closer to the truth.">
+  <link rel="canonical" href="https://haloapps-dev.github.io/tenniscoach/serve-speed/">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="/"><span class="dot"></span>Halo Apps</a>
+      <nav><a href="/tenniscoach/">Courtella</a><a href="mailto:haloapps.dev@gmail.com">Contact</a></nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <h1>How to measure your tennis serve speed with a phone</h1>
+    <p class="lead">A phone can estimate serve speed from video, but only within a margin. Here is how it works, why two tools rarely agree, and how to film so your number is as close to the truth as one camera allows.</p>
+
+    <div class="summary">
+      <ul>
+        <li>Radar guns read the ball's <strong>peak speed</strong> just after the racket. Most video methods measure an <strong>average</strong> over part of the flight, which is lower. The two numbers are different things.</li>
+        <li>From one phone, an honest serve speed has a spread of several km/h either way. A single number with no margin hides that.</li>
+        <li>Film from high up and behind the middle of the baseline, in landscape, at 60 frames per second or more, in good light.</li>
+      </ul>
+    </div>
+
+    <h2>Why radar and apps give different numbers</h2>
+    <p>A tennis ball slows down quickly. Air drag takes speed off from the moment it leaves the strings, and the bounce takes off more. So "serve speed" depends on where you measure it.</p>
+    <ul>
+      <li><strong>Radar guns</strong> (and the numbers on TV) report the fastest reading, close to the racket.</li>
+      <li><strong>Video apps</strong> usually time the ball between two points, such as from the hit to the bounce. That gives an average speed over the flight, which is always below the peak.</li>
+      <li><strong>Sensors on the racket</strong> estimate ball speed from the racket's motion, which is a model, not a measurement of the ball.</li>
+    </ul>
+    <p>None of these is wrong. They answer different questions. What matters is using the same method each time, so you can see whether your serve is getting faster.</p>
+
+    <h2>How video turns pixels into speed</h2>
+    <ol>
+      <li><strong>Find the court.</strong> The court lines have known sizes, so they tell the app where the camera is and how pixels map to metres on the ground.</li>
+      <li><strong>Follow the ball.</strong> The app finds the ball in each frame. At 60 frames per second a 160 km/h serve travels about 74 cm between frames, so the ball is often a blurred streak.</li>
+      <li><strong>Fit the flight.</strong> One camera can't see depth directly. Fitting a physical flight path (gravity plus air drag) through all the ball's positions, and anchoring it at the bounce, recovers the 3D path.</li>
+      <li><strong>Read the speed off the fitted path,</strong> together with how well the path fits. A loose fit means a wide margin.</li>
+    </ol>
+
+    <h2>How big is the error?</h2>
+    <p>With one phone, the main errors come from where the camera is and how many frames see the ball. A camera low down or off to the side sees the ball's depth poorly. Fewer frames mean a looser fit. That's why <a href="/tenniscoach/">Courtella</a> shows every speed with its ± spread and marks uncertain ones as approximate, instead of printing a precise-looking number.</p>
+
+    <h2>How to film for a better number</h2>
+    <ul>
+      <li>Clip the phone to the fence <strong>behind the middle of the baseline, as high as you can</strong>, in landscape.</li>
+      <li>Use <strong>60 frames per second or more</strong>. 30 fps leaves too few frames of a fast serve.</li>
+      <li>Keep the <strong>whole court and both service boxes</strong> in the picture.</li>
+      <li>Film in <strong>daylight or good court lighting</strong>. Dim light means more blur and a wider margin.</li>
+      <li>Compare serves <strong>from the same spot</strong> each session, so changes come from your serve and not from the camera.</li>
+    </ul>
+
+    <section class="card">
+      <h2>Courtella</h2>
+      <p>Courtella follows the ball from one phone behind the baseline, keeps score, and shows serve and shot speed with how sure it is. Tracking runs on the phone and works offline.</p>
+      <div class="links">
+        <a href="/tenniscoach/">About Courtella</a>
+        <a href="mailto:haloapps.dev@gmail.com?subject=Courtella%20beta">Ask to join the beta</a>
+      </div>
+    </section>
+  </main>
+  <footer class="site">
+    <div class="wrap">&copy; 2026 Halo Apps &middot; <a href="mailto:haloapps.dev@gmail.com">haloapps.dev@gmail.com</a></div>
+  </footer>
+</body>
+</html>
