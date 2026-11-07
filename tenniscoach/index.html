@@ -3,36 +3,86 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Courtella | Halo Apps</title>
-  <meta name="description" content="Live ball tracking, score assist and shot speed for tennis from one phone behind the baseline. Runs on the phone, offline.">
+  <title>Courtella: tennis serve speed from your phone</title>
+  <meta name="description" content="Clip your phone behind the baseline and serve. Courtella tracks every serve on the phone: estimated speed with how sure it is, in or out, where it landed, and a report after every basket. No radar gun, no account.">
+  <link rel="canonical" href="https://haloapps-dev.github.io/tenniscoach/">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/tenniscoach/courtella.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Courtella: Tennis Serve Speed",
+    "applicationCategory": "SportsApplication",
+    "operatingSystem": "iOS, Android",
+    "description": "Serve practice from one phone behind the baseline: estimated serve speed, in or out, landing spot and a report after every basket. Runs on the phone, offline.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
 </head>
 <body>
   <header class="site">
     <div class="wrap">
       <a class="brand" href="/"><span class="dot"></span>Halo Apps</a>
-      <nav><a href="/tidify/">Tidify</a><a href="/halo-scan/">Halo Scan</a><a href="mailto:haloapps.dev@gmail.com">Contact</a></nav>
+      <nav><a href="/tenniscoach/guides/">Serve guides</a><a href="mailto:haloapps.dev@gmail.com?subject=Courtella">Contact</a></nav>
     </div>
   </header>
   <main class="wrap">
-    <h1>Courtella</h1>
-    <p class="meta">Formerly Tennis AI Coach.</p>
-    <p class="lead">Clip your phone behind the baseline and play. The app follows the ball, suggests each point for a one-tap confirm, measures shot speed and says how sure it is, and saves highlights.</p>
+    <div class="app">
+      <div class="app-icon">C</div>
+      <div>
+        <h1>Your serve, measured from one phone</h1>
+        <p class="lead">Clip your phone behind the baseline, tap start and serve a basket. Courtella says each serve's speed and call out loud as it lands, then shows you what changed since last time. No radar gun, no helper, no account.</p>
+      </div>
+    </div>
+
+    <section class="card" id="get">
+      <h2>Get Courtella</h2>
+      <p>Courtella is in beta on iPhone and Android, free. Email us with the phone you use and we'll send you an invite.</p>
+      <div class="stores">
+          <a class="store" href="mailto:haloapps.dev@gmail.com?subject=Courtella%20beta%20(landing)">Join the beta</a>
+        </div>
+    </section>
+
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li><strong>Clip the phone behind the baseline.</strong> A fence or a stand is fine. About 2.3 m (7.5 ft) up sees the far service boxes best, and lower still works.</li>
+      <li><strong>Tap start.</strong> Courtella finds the court lines by itself. You can fix them by hand if the light is tricky.</li>
+      <li><strong>Serve.</strong> Each serve gets its estimated speed, in or out and where it landed, said out loud so your back can stay to the phone.</li>
+      <li><strong>Read your report.</strong> After every basket: fastest serve in, % in, first against second serves, the landing map, your toss and one or two things to work on.</li>
+    </ol>
 
     <section class="card">
+      <h2>What you get</h2>
       <ul>
-        <li><strong>Score assist.</strong> Points are suggested from the ball's bounces; one tap confirms or changes them, and big buttons score by hand at any time.</li>
-        <li><strong>Shot speed with confidence.</strong> Every speed comes with its spread, and uncertain ones are marked as such.</li>
-        <li><strong>Works offline.</strong> Tracking runs on the phone. Courts with no signal are fine.</li>
-        <li><strong>Private by default.</strong> Video and sessions stay on your phone. No account and no ads.</li>
+        <li><strong>Speed on every serve, with how sure it is.</strong> Each speed comes with a ± range. If the camera couldn't read one, you see a dash, never a made-up number.</li>
+        <li><strong>In or out, and where.</strong> T, body or wide, deuce or ad box. Calls too close for the camera are marked as close, not guessed.</li>
+        <li><strong>Practice with a purpose.</strong> First serves, second serves, targets called before each serve, and a 24-serve test to repeat month by month.</li>
+        <li><strong>Your serve over time.</strong> Speed, % in, toss steadiness and second-serve kick, session by session, with your bests.</li>
+        <li><strong>Share with your coach.</strong> A card of your session, your best serves back to back, or every serve as a spreadsheet.</li>
       </ul>
-      <div class="links">
-        <a href="/tenniscoach/serve-speed/">How serve speed is measured</a>
-        <a href="/tenniscoach/privacy/">Privacy policy</a>
-        <a href="/tenniscoach/terms/">Terms of use</a>
-        <a href="mailto:haloapps.dev@gmail.com?subject=Courtella%20support">Support</a>
-      </div>
     </section>
+
+    <section class="card">
+      <h2>Private by design</h2>
+      <p>Tracking runs on the phone, so a court with no signal is fine. Video, sound and your sessions stay on your phone. No account and no ads. Anonymous usage stats are sent only if you turn them on.</p>
+    </section>
+
+    <h2>Honest numbers</h2>
+    <p>Radar guns and TV show the ball's speed just off the racket. Some camera apps show the average speed over the whole flight, which reads 12-25% lower for the same serve. Courtella estimates the speed off the racket and shows its range, so you can compare it with a radar gun. Read <a href="/tenniscoach/guides/average-tennis-serve-speed/">why serve speeds disagree</a>.</p>
+
+    <h2>Serve guides</h2>
+    <ul class="guides">
+      <li><a href="/tenniscoach/guides/average-tennis-serve-speed/">Average tennis serve speed, by level and age</a><span>Pros, juniors and club players, and why the numbers disagree.</span></li>
+      <li><a href="/tenniscoach/serve-speed/">How to measure your serve speed without a radar gun</a><span>A stopwatch-free formula with your phone's slow motion, and what each method misses.</span></li>
+      <li><a href="/tenniscoach/guides/serve-toss-consistency/">How consistent should your serve toss be?</a><span>What the research measured, and drills that keep the swing in.</span></li>
+    </ul>
+
+    <div class="links">
+      <a href="/tenniscoach/privacy/">Privacy policy</a>
+      <a href="/tenniscoach/terms/">Terms of use</a>
+      <a href="mailto:haloapps.dev@gmail.com?subject=Courtella%20support">Support</a>
+    </div>
   </main>
   <footer class="site">
     <div class="wrap">&copy; 2026 Halo Apps &middot; <a href="mailto:haloapps.dev@gmail.com">haloapps.dev@gmail.com</a></div>

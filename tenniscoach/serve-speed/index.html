@@ -3,70 +3,131 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>How to measure your tennis serve speed with a phone | Courtella</title>
-  <meta name="description" content="How phone apps measure tennis serve speed from video, why radar guns and apps disagree, how big the error really is, and how to film so the number is closer to the truth.">
+  <title>How to measure your tennis serve speed with a phone, no radar gun | Courtella</title>
+  <meta name="description" content="Film your serve in slow motion, count the frames from contact to bounce, and divide 48 by the flight time for a speed in mph. How accurate that is, how radar guns compare, and what phone apps do.">
   <link rel="canonical" href="https://haloapps-dev.github.io/tenniscoach/serve-speed/">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/tenniscoach/courtella.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Measure your tennis serve speed with your phone's slow motion",
+    "datePublished": "2026-11-07",
+    "step": [
+      { "@type": "HowToStep", "text": "Put the phone behind you in slow motion (120 or 240 frames a second) with the far service box in view." },
+      { "@type": "HowToStep", "text": "Serve normally and aim to land near the service line." },
+      { "@type": "HowToStep", "text": "Count the frames from the racket meeting the ball to the ball touching the court, and divide by the frame rate to get the flight time." },
+      { "@type": "HowToStep", "text": "Divide 48 by the flight time in seconds for mph, or 77 for km/h." }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header class="site">
     <div class="wrap">
-      <a class="brand" href="/"><span class="dot"></span>Halo Apps</a>
-      <nav><a href="/tenniscoach/">Courtella</a><a href="mailto:haloapps.dev@gmail.com">Contact</a></nav>
+      <a class="brand" href="/tenniscoach/"><span class="dot"></span>Courtella</a>
+      <nav><a href="/tenniscoach/guides/">Serve guides</a><a href="/tenniscoach/#get">Get the app</a></nav>
     </div>
   </header>
   <main class="wrap">
-    <h1>How to measure your tennis serve speed with a phone</h1>
-    <p class="lead">A phone can estimate serve speed from video, but only within a margin. Here is how it works, why two tools rarely agree, and how to film so your number is as close to the truth as one camera allows.</p>
+    <h1>How to measure your serve speed without a radar gun</h1>
+    <p class="meta">Serve guide · Updated 7 November 2026</p>
 
-    <div class="summary">
-      <ul>
-        <li>Radar guns read the ball's <strong>peak speed</strong> just after the racket. Most video methods measure an <strong>average</strong> over part of the flight, which is lower. The two numbers are different things.</li>
-        <li>From one phone, an honest serve speed has a spread of several km/h either way. A single number with no margin hides that.</li>
-        <li>Film from high up and behind the middle of the baseline, in landscape, at 60 frames per second or more, in good light.</li>
-      </ul>
+    <div class="answer">
+      <p><strong>The short answer.</strong> Film your serve in slow motion, find the time from the racket hitting the ball to the ball hitting the court, and divide: <strong>48 ÷ flight time in seconds = speed off the racket in mph</strong> (77 ÷ time for km/h). A serve that takes half a second to land is about 96 mph. It works for serves that land near the service line, and it's good to about ±10%.</p>
     </div>
 
-    <h2>Why radar and apps give different numbers</h2>
-    <p>A tennis ball slows down quickly. Air drag takes speed off from the moment it leaves the strings, and the bounce takes off more. So "serve speed" depends on where you measure it.</p>
-    <ul>
-      <li><strong>Radar guns</strong> (and the numbers on TV) report the fastest reading, close to the racket.</li>
-      <li><strong>Video apps</strong> usually time the ball between two points, such as from the hit to the bounce. That gives an average speed over the flight, which is always below the peak.</li>
-      <li><strong>Sensors on the racket</strong> estimate ball speed from the racket's motion, which is a model, not a measurement of the ball.</li>
-    </ul>
-    <p>None of these is wrong. They answer different questions. What matters is using the same method each time, so you can see whether your serve is getting faster.</p>
+    <div class="cta">
+      <div class="app-icon">C</div>
+      <div>
+        <strong>Or let your phone do it on every serve</strong>
+        <p>Courtella tracks each serve live from one phone behind the baseline and says its estimated speed out loud as it lands, with in or out and where it bounced. For iPhone and Android.</p>
+        <div class="stores">
+          <a class="store" href="mailto:haloapps.dev@gmail.com?subject=Courtella%20beta%20(serve-speed)">Join the beta</a>
+        </div>
+      </div>
+    </div>
 
-    <h2>How video turns pixels into speed</h2>
-    <ol>
-      <li><strong>Find the court.</strong> The court lines have known sizes, so they tell the app where the camera is and how pixels map to metres on the ground.</li>
-      <li><strong>Follow the ball.</strong> The app finds the ball in each frame. At 60 frames per second a 160 km/h serve travels about 74 cm between frames, so the ball is often a blurred streak.</li>
-      <li><strong>Fit the flight.</strong> One camera can't see depth directly. Fitting a physical flight path (gravity plus air drag) through all the ball's positions, and anchoring it at the bounce, recovers the 3D path.</li>
-      <li><strong>Read the speed off the fitted path,</strong> together with how well the path fits. A loose fit means a wide margin.</li>
+    <h2>Method 1: your phone's slow motion and a little physics</h2>
+    <ol class="steps">
+      <li><strong>Set up the phone.</strong> Turn on slow motion at 120 or 240 frames a second. Put the phone a few steps behind where you serve, on a fence or a bag, high enough to see the far service box.</li>
+      <li><strong>Serve normally.</strong> Flat first serves that land near the service line give the cleanest number.</li>
+      <li><strong>Count the frames.</strong> Step through the video. Note the frame where the strings meet the ball and the frame where the ball touches the court. Flight time = frames between them ÷ frame rate. For example, 120 frames at 240 fps is 0.50 s.</li>
+      <li><strong>Work out the speed.</strong> Speed in mph ≈ 48 ÷ flight time. Speed in km/h ≈ 77 ÷ flight time.</li>
     </ol>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Contact to bounce</th><th>0.40 s</th><th>0.45 s</th><th>0.50 s</th><th>0.55 s</th><th>0.60 s</th><th>0.70 s</th><th>0.80 s</th></tr></thead>
+      <tbody>
+        <tr><td>mph</td><td>120</td><td>107</td><td>96</td><td>87</td><td>80</td><td>69</td><td>60</td></tr>
+        <tr><td>km/h</td><td>194</td><td>172</td><td>155</td><td>141</td><td>129</td><td>111</td><td>97</td></tr>
+      </tbody>
+    </table>
+    </div>
 
-    <h2>How big is the error?</h2>
-    <p>With one phone, the main errors come from where the camera is and how many frames see the ball. A camera low down or off to the side sees the ball's depth poorly. Fewer frames mean a looser fit. That's why <a href="/tenniscoach/">Courtella</a> shows every speed with its ± spread and marks uncertain ones as approximate, instead of printing a precise-looking number.</p>
+    <h3>Why not just distance divided by time?</h3>
+    <p>Because a tennis ball slows down a lot in the air. It loses about 2% of its speed every metre and reaches the bounce at only about 70-75% of the speed it left the racket with. Dividing the 18 m flight by the time gives the average speed over the flight, which is 12-25% below the speed off the racket that radar guns and TV show. The 48 ÷ time rule comes from tennis physicist Rod Cross's trajectory work: a serve struck just inside the baseline takes about 21.5 ÷ v seconds to reach the far service line, where v is its starting speed in metres per second. Turned around and converted, that's 48 ÷ time in mph.</p>
+
+    <h3>How accurate is it?</h3>
+    <ul>
+      <li><strong>Frame rate matters most.</strong> At 240 fps one frame is about 1% of a half-second flight. At 30 fps one frame is about 7%, and you can miss by a frame at each end, so a normal-speed video can be off by 10 mph or more from frame counting alone.</li>
+      <li><strong>Where it lands matters.</strong> The rule assumes the serve lands near the service line. A serve that lands short flew less far, so it reads a little high.</li>
+      <li><strong>Spin and arc matter.</strong> Kick and slice serves fly a higher, slower arc and slow down more, so treat their numbers as rough. Very slow serves have to arc high to land in, so they read a little low.</li>
+    </ul>
+    <p>Taken together, expect about ±10% on a good clip. That's plenty to see whether your serve is 70 or 90 mph, and to see a change over a few weeks if you measure the same way each time.</p>
+
+    <h2>Method 2: a radar gun, placed right</h2>
+    <p>Handheld sports radars are the usual reference. A 2021 study with 13 recreational players found a small sports radar read within about 3 km/h (2 mph) of a professional Stalker gun on average. The catch is placement. A radar only sees the part of the ball's motion coming straight at it, so it should sit behind the server, in line with the serve. Off to the side, the same serve reads 5-15% low. If you borrow one, put it on a tripod behind you, a little above shoulder height.</p>
+
+    <h2>Method 3: a phone app</h2>
+    <p>Phone apps for serve speed work in one of three ways:</p>
+    <ul>
+      <li><strong>Tap the frames yourself.</strong> You film, then mark contact and bounce. It's the slow-motion method above with the maths done for you. Accurate if you film in slow motion, slow if you want more than a few serves.</li>
+      <li><strong>Use the racket or the court as a ruler.</strong> The app measures how far the ball moves between frames in one clip. Results depend on the angle and the frame rate, and many apps show average speed rather than speed off the racket.</li>
+      <li><strong>Track every serve live.</strong> The phone sits behind the baseline, finds the court lines and follows the ball through each serve, so you just serve your basket. This is what Courtella does.</li>
+    </ul>
+    <p>Whatever you use, check which speed it reports. If its numbers look 15-20% lower than you expect, it's probably average flight speed. See <a href="/tenniscoach/guides/average-tennis-serve-speed/">average tennis serve speed by level</a> for how the two compare.</p>
 
     <h2>How to film for a better number</h2>
+    <p>Whichever method you use, the camera position decides most of the error.</p>
     <ul>
       <li>Clip the phone to the fence <strong>behind the middle of the baseline, as high as you can</strong>, in landscape.</li>
-      <li>Use <strong>60 frames per second or more</strong>. 30 fps leaves too few frames of a fast serve.</li>
+      <li>Use <strong>60 frames per second or more</strong>. At 30 fps a serve is only in about 14-20 frames.</li>
       <li>Keep the <strong>whole court and both service boxes</strong> in the picture.</li>
       <li>Film in <strong>daylight or good court lighting</strong>. Dim light means more blur and a wider margin.</li>
-      <li>Compare serves <strong>from the same spot</strong> each session, so changes come from your serve and not from the camera.</li>
+      <li>Film <strong>from the same spot</strong> each session, so changes come from your serve and not from the camera.</li>
     </ul>
 
-    <section class="card">
-      <h2>Courtella</h2>
-      <p>Courtella follows the ball from one phone behind the baseline, keeps score, and shows serve and shot speed with how sure it is. Tracking runs on the phone and works offline.</p>
-      <div class="links">
-        <a href="/tenniscoach/">About Courtella</a>
-        <a href="mailto:haloapps.dev@gmail.com?subject=Courtella%20beta">Ask to join the beta</a>
+    <h2>How Courtella measures speed</h2>
+    <p>Courtella follows the ball from just after contact to the bounce, fits its flight, and estimates the speed off the racket, so its numbers are meant to be compared with a radar gun behind you, not with average-speed apps. Every speed comes with a ± range that shows how sure the phone is. Faster phones track at 60 frames a second, which tightens the range. If the camera couldn't follow a serve well enough, you get a dash instead of a guess. The speeds are estimates from one camera, so a radar gun in the right spot is still the reference.</p>
+
+    <div class="cta">
+      <div class="app-icon">C</div>
+      <div>
+        <strong>Every serve, measured, without the frame counting</strong>
+        <p>Clip your phone behind the baseline and serve. Courtella calls each serve's speed, in or out and landing spot as it happens, and shows a report after every basket. Runs on the phone, offline, no account.</p>
+        <div class="stores">
+          <a class="store" href="mailto:haloapps.dev@gmail.com?subject=Courtella%20beta%20(serve-speed)">Join the beta</a>
+        </div>
       </div>
-    </section>
+    </div>
+
+    <h2>More serve guides</h2>
+    <ul class="guides">
+      <li><a href="/tenniscoach/guides/average-tennis-serve-speed/">Average tennis serve speed, by level and age</a></li>
+      <li><a href="/tenniscoach/guides/serve-toss-consistency/">How consistent should your serve toss be?</a></li>
+    </ul>
+
+    <h2>Sources</h2>
+    <ol class="sources">
+      <li>Rod Cross, ball trajectories: flight time to the service line, speed kept at the bounce: <a href="https://www.physics.usyd.edu.au/~cross/TRAJECTORIES/42.%20Ball%20Trajectories.pdf">physics.usyd.edu.au</a></li>
+      <li>Validity of a small sports radar against a Stalker gun, 13 recreational tennis players, Journal of Sports Sciences 39(12), 2021, pp. 1312-1319</li>
+      <li>Radar placement and the cosine effect: radar reads only the speed toward the gun (standard Doppler radar behaviour); a Stalker placed behind the server is the setup used in <a href="https://arxiv.org/pdf/2607.28500">arXiv 2607.28500</a></li>
+    </ol>
   </main>
   <footer class="site">
-    <div class="wrap">&copy; 2026 Halo Apps &middot; <a href="mailto:haloapps.dev@gmail.com">haloapps.dev@gmail.com</a></div>
+    <div class="wrap">&copy; 2026 Halo Apps &middot; <a href="/tenniscoach/">Courtella</a> &middot; <a href="/tenniscoach/privacy/">Privacy</a></div>
   </footer>
 </body>
 </html>
