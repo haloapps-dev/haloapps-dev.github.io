@@ -17,7 +17,7 @@
   </header>
   <main class="wrap">
     <h1>Territory privacy policy</h1>
-    <p class="meta">Effective date: 9 November 2026</p>
+    <p class="meta">Effective date: 9 November 2026 (updated the same day: map tiles and servers)</p>
 <p><strong>In short:</strong> Territory plans walks from where you are,
 so it uses your location while the app is open. Your walk history and
 your fog map stay on your phone. To draw the map and find streets, the
@@ -34,12 +34,15 @@ except the walks you finish, which stay on your phone (see below).</p>
 <p>To work, the app sends the area around you, not your identity, to
 these services:</p>
 <ul>
-<li><strong>OpenStreetMap Overpass</strong> (overpass-api.de and its
-mirrors): the centre and radius of the area to plan in (about 1 to 2 km),
-to download the streets and places there. The answer is kept on your
-phone for up to 30 days.</li>
-<li><strong>CARTO</strong> (basemaps.cartocdn.com): map tiles for the
-part of the map on screen.</li>
+<li><strong>OpenStreetMap Overpass</strong> (overpass-api.de, and when
+it is busy the public mirrors overpass.private.coffee, maps.mail.ru and
+overpass.kumi.systems): the centre and radius of the area to plan in
+(about 1 to 2.5 km). The centre is rounded to a grid of about 200 m, so
+it is not your exact position. The answer is kept on your phone for up
+to 30 days. Streets for Battersea and Clapham in London come with the
+app, so walks there need no download.</li>
+<li><strong>OpenStreetMap tiles</strong> (tile.openstreetmap.org): map
+images for the part of the map on screen.</li>
 <li><strong>Transport for London</strong> (api.tfl.gov.uk): when you
 choose to come back by bus in London, the point where your walk ended,
 to show nearby stops and the next buses.</li>
@@ -64,9 +67,9 @@ Authentication) with a random ID. It has no name, email or phone
 number. Under that ID, our database (Firebase Realtime Database, hosted
 in Belgium, europe-west1) stores:</p>
 <ul>
-<li>That you finished a walk to a place or along a shared route, and
-when (only after you walked most of it). This is what lets you rate
-it.</li>
+<li>When you rate a walk: that you walked to that place or along that
+shared route, and when. Only walks you walked most of can be rated.
+Walks you don't rate are never sent.</li>
 <li>Your rating of that place or route (loved it or not), and the
 running totals other walkers see.</li>
 <li>If you tap <strong>Share this route</strong>: the route's line, its
