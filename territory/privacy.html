@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Territory privacy policy | Halo Apps</title>
+  <meta name="description" content="How Territory handles your data: your walks and map stay on your phone; your location is used to plan and guide walks; ratings and routes you share are stored under a random ID; usage statistics only if you say yes.">
+  <link rel="canonical" href="https://haloapps-dev.github.io/territory/privacy.html">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="/"><span class="dot"></span>Halo Apps</a>
+      <nav><a href="/tidify/">Tidify</a><a href="/halo-scan/">Halo Scan</a><a href="mailto:haloapps.dev@gmail.com">Contact</a></nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <h1>Territory privacy policy</h1>
+    <p class="meta">Effective date: 9 November 2026</p>
+<p><strong>In short:</strong> Territory plans walks from where you are,
+so it uses your location while the app is open. Your walk history and
+your fog map stay on your phone. To draw the map and find streets, the
+app asks map services for the area around you. If you rate a place or
+share a route, that is stored under a random ID with no name or email.
+Crash reports are on unless you turn them off; anonymous usage
+statistics are sent only if you say yes. There are no ads.</p>
+
+<h2 id="location">Your location</h2>
+<p>Territory asks for your location ("while using the app") to plan a
+walk from where you are and to guide you along it. It does not track you
+in the background and does not keep a history of where you have been,
+except the walks you finish, which stay on your phone (see below).</p>
+<p>To work, the app sends the area around you, not your identity, to
+these services:</p>
+<ul>
+<li><strong>OpenStreetMap Overpass</strong> (overpass-api.de and its
+mirrors): the centre and radius of the area to plan in (about 1 to 2 km),
+to download the streets and places there. The answer is kept on your
+phone for up to 30 days.</li>
+<li><strong>CARTO</strong> (basemaps.cartocdn.com): map tiles for the
+part of the map on screen.</li>
+<li><strong>Transport for London</strong> (api.tfl.gov.uk): when you
+choose to come back by bus in London, the point where your walk ended,
+to show nearby stops and the next buses.</li>
+<li><strong>Google Maps</strong>: only if you tap "Directions back to
+the start", which opens Google Maps with that start and end.</li>
+</ul>
+<p>These services receive your device's IP address, as any website
+does, under their own privacy policies.</p>
+
+<h2 id="on-your-phone">What stays on your phone</h2>
+<ul>
+<li>Your finished walks: when, how long, how far, the place you
+reached, and the line you walked (that is what clears the fog).</li>
+<li>Which streets you have walked, your fog percentage and your
+settings.</li>
+</ul>
+<p>We never receive this. Uninstalling the app deletes it.</p>
+
+<h2 id="community">Ratings and shared routes</h2>
+<p>Territory signs each installation in anonymously (Firebase
+Authentication) with a random ID. It has no name, email or phone
+number. Under that ID, our database (Firebase Realtime Database, hosted
+in Belgium, europe-west1) stores:</p>
+<ul>
+<li>That you finished a walk to a place or along a shared route, and
+when (only after you walked most of it). This is what lets you rate
+it.</li>
+<li>Your rating of that place or route (loved it or not), and the
+running totals other walkers see.</li>
+<li>If you tap <strong>Share this route</strong>: the route's line, its
+length, the place it leads to, and the walker name you choose. Other
+walkers nearby can then get your route. A shared route starts where your
+walk started, so don't share one that starts at your front door if you
+don't want people to know where that is.</li>
+</ul>
+
+<h2 id="crash-reports">Crash reports (Firebase Crashlytics)</h2>
+<p>If the app crashes or hits a serious error it sends a crash report:
+the error, the app version, device model, operating system, and a random
+installation identifier. Never your location or walks. Turn it off in
+<strong>Settings › Send crash reports</strong>. Kept for 90 days.</p>
+
+<h2 id="usage-statistics">Usage statistics (Google Analytics for
+Firebase), only with your yes</h2>
+<p>If you tick <strong>Help improve Territory</strong> on the first
+screen, or later in Settings, the app sends anonymous events such as "a
+route was planned", "a walk was finished" or "a route was rated", with
+counts like minutes and kilometres. Never coordinates, place or street
+names, or your walker name. Until you answer, nothing is sent.
+Advertising features are off: no advertising ID, no ad personalisation.
+Kept for at most 14 months.</p>
+
+<h2 id="notifications">Notifications</h2>
+<p>If you allow it, Territory schedules one reminder on your phone after
+a week without a walk. Nothing is sent to set it up.</p>
+
+<h2 id="what-the-app-does-not-do">What the app does not do</h2>
+<ul>
+<li>No ads or advertising SDKs, no tracking across apps or websites.</li>
+<li>No background location, contacts, camera or microphone.</li>
+<li>No selling or sharing of personal data.</li>
+</ul>
+
+<h2 id="service-providers">Service providers</h2>
+<p>Google LLC (Firebase: authentication, database, crash reports and
+statistics) processes data on our behalf, encrypted in transit (<a
+href="https://firebase.google.com/support/privacy">Firebase privacy
+information</a>). The map services above are independent providers.</p>
+
+<h2 id="retention-and-deletion">Retention and deletion</h2>
+<p>Data on your phone is deleted when you uninstall the app. To delete
+your ratings and shared routes from our database, email <a
+href="mailto:haloapps.dev@gmail.com">haloapps.dev@gmail.com</a> with your
+walker name or roughly when and where you shared a route; we delete them
+within 30 days.</p>
+
+<h2 id="your-rights">Your rights</h2>
+<p>Depending on where you live (for example under the GDPR or UK GDPR),
+you may have rights to access, delete or object to the processing of
+personal data. Our legal basis is providing the service you ask for
+(planning walks, ratings and sharing), our legitimate interest in
+keeping the app working (crash reports, which you can turn off) and
+your consent for usage statistics (which you can withdraw).</p>
+
+<h2 id="safety">Walk safely</h2>
+<p>Routes come from OpenStreetMap data, which can be out of date. Watch
+the road, follow signs and local rules, and trust your own judgement
+about where to walk, especially after dark.</p>
+
+<h2 id="children">Children</h2>
+<p>Territory is not directed at children under 13.</p>
+
+<h2 id="changes">Changes</h2>
+<p>If a future version changes what is sent, we will update this policy
+before release.</p>
+
+<h2 id="contact">Contact</h2>
+<p>Halo Apps · <a
+href="mailto:haloapps.dev@gmail.com">haloapps.dev@gmail.com</a></p>
+  </main>
+  <footer class="site">
+    <div class="wrap">&copy; 2026 Halo Apps &middot; <a href="mailto:haloapps.dev@gmail.com">haloapps.dev@gmail.com</a></div>
+  </footer>
+</body>
+</html>

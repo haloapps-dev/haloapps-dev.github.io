@@ -13,6 +13,7 @@ https://haloapps-dev.github.io. Plain HTML and CSS, no build step.
 | `/halo-scan/privacy/` | Halo Scan privacy policy |
 | `/tenniscoach/` | Courtella (serve practice) app page; `courtella.css` adds its boxes on top of `style.css` |
 | `/tenniscoach/serve-speed/`, `/tenniscoach/guides/` | Courtella serve guides (one search per page, sources listed, app box after the short answer and at the end) |
+| `/territory/privacy.html` | Territory privacy policy (linked from the app, so keep this path) |
 | `/tailtick/privacy.html` | Tailtick privacy policy (linked from the app, so keep this path) |
 | `/app-ads.txt` | AdMob authorised sellers file |
 | `/robots.txt`, `/sitemap.xml` | Crawler rules (OAI-SearchBot and Bingbot welcome, `/go/` excluded) and page list |
