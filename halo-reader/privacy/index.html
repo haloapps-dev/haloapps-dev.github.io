@@ -16,7 +16,7 @@
   </header>
   <main class="wrap">
     <h1>Halo Reader privacy policy</h1>
-    <p class="meta">Effective date: 11 November 2026</p>
+    <p class="meta">Effective date: 12 November 2026</p>
 <p><strong>In short:</strong> your books, reading progress, highlights,
 notes and statistics are stored on your device. If you turn on sync, they
 are copied to a cloud storage account <strong>you</strong> connect
@@ -33,6 +33,14 @@ advertising SDKs.</p>
 highlights, notes and reading-time statistics.</li>
 <li><strong>Settings</strong> such as fonts, page colours and the name of
 this device.</li>
+<li><strong>Dictionaries</strong> you add (StarDict files) are read on
+your device; looking a word up in them sends nothing anywhere.</li>
+<li><strong>The private shelf</strong>, if you set one up: its books,
+covers and reading data are kept in a separate encrypted database that
+opens only with your code, password or biometrics. It is never synced
+and never included in a backup file. If you set a number of wrong tries,
+the app erases it after that many, and nobody, including us, can recover
+it.</li>
 </ul>
 <p>Books are opened only by the app on your device. To show a book, the
 app runs a small web server that only your own device can reach
@@ -86,11 +94,20 @@ anyone, not used for advertising, and not read by people.</p>
 
 <h2 id="things-you-choose-to-send">Things you choose to send</h2>
 <ul>
-<li><strong>Look up and translate:</strong> when you select text and tap
-<em>Look up</em> or <em>Translate</em>, the app opens your browser on a
-Google search or Google Translate page with that text. On iPhone and
-iPad, the system dictionary is used when it has the word, on your
-device.</li>
+<li><strong>Look up and translate:</strong> Look up first checks the
+dictionaries on your device. On iPhone and iPad, Translate uses Apple's
+translation on your device (iOS 17.4 and later; Apple may download
+language files the first time). On Android and older iPhones, Translate
+opens a Google Translate page with the selected text, and <em>Search the
+web</em> opens a Google search for it. On Android you can also hand the
+text to another app you pick, under that app's own privacy policy.</li>
+<li><strong>Online catalogs (OPDS):</strong> when you open a book
+catalog, such as the suggested Project Gutenberg catalog or one you add
+(for example a calibre server at home), the app asks that server for its
+pages, covers and the books you choose to download. That server sees your
+IP address and what you ask for, under its own terms. A catalog's user
+name and password, if it needs them, are kept in your device's secure
+storage and sent only to that catalog.</li>
 <li><strong>Links in a book</strong> open in your browser when you tap
 them.</li>
 <li><strong>Share and export:</strong> books, quotes and highlight
@@ -114,12 +131,18 @@ library.</li>
 <h2 id="permissions">Permissions</h2>
 <ul>
 <li><strong>Internet and network state (Android):</strong> used only for
-sync with the account you connect, and to wait for Wi-Fi when you choose
-"book files on Wi-Fi only".</li>
+sync with the account you connect, for online catalogs you open, and to
+wait for Wi-Fi when you choose "book files on Wi-Fi only".</li>
+<li><strong>Local network (iPhone and iPad):</strong> asked for only when
+you add a catalog or WebDAV storage on your home network.</li>
+<li><strong>Face ID or fingerprint:</strong> used only to open the
+private shelf, if you turn that on. The check happens in the system; the
+app never receives your face or fingerprint data.</li>
 <li><strong>Files:</strong> the app opens only the files you pick in the
 system file picker or send to it with "Open with" or "Share".</li>
-<li><strong>Background audio (iPhone and iPad):</strong> lets read aloud
-continue when you lock the screen.</li>
+<li><strong>Background audio:</strong> lets read aloud continue when you
+lock the screen (a media playback service with a notification on
+Android).</li>
 </ul>
 
 <h2 id="data-retention-and-deletion">Data retention and deletion</h2>
