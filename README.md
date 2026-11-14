@@ -13,7 +13,7 @@ https://haloapps-dev.github.io. Plain HTML and CSS, no build step.
 | `/halo-scan/privacy/` | Halo Scan privacy policy |
 | `/halo-reader/` | Halo Reader app page |
 | `/halo-reader/privacy/` | Halo Reader privacy policy (Google OAuth consent screen and store listings link here) |
-| `/tenniscoach/` | Courtella (serve practice) app page; `courtella.css` adds its boxes on top of `style.css` |
+| `/tenniscoach/` | Courtella (serve practice) app page; `courtella.css` adds its boxes on top of `style.css`. `#premium` is a fake-door test (since 14 Nov 2026): prices plus waitlist buttons that open an email titled "Courtella Premium waitlist (yearly/monthly/lifetime)"; count those emails to read demand |
 | `/tenniscoach/serve-speed/`, `/tenniscoach/guides/` | Courtella serve guides (one search per page, sources listed, app box after the short answer and at the end) |
 | `/territory/privacy.html` | Territory privacy policy (linked from the app, so keep this path) |
 | `/tailtick/privacy.html` | Tailtick privacy policy (linked from the app, so keep this path) |

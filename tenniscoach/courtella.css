@@ -40,3 +40,8 @@
 @media (max-width: 560px) {
   .cta { flex-direction: column; align-items: flex-start; }
 }
+/* Premium fake door (14 Nov 2026): price list + waitlist buttons */
+.prices { list-style: none; padding-left: 0; display: grid; gap: 8px; margin: 0 0 14px; }
+.prices li { border: 1px solid var(--line); border-radius: 12px; padding: 10px 14px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px; }
+.prices span { color: var(--muted); font-size: 15px; }
+.store-alt { background: transparent; color: var(--text); border: 1px solid var(--line); }
