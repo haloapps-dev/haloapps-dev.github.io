@@ -16,7 +16,7 @@
   </header>
   <main class="wrap">
     <h1>Tidify privacy policy</h1>
-    <p class="meta">Effective date: 12 October 2026</p>
+    <p class="meta">Effective date: 16 November 2026</p>
 
     <p>This policy explains what information the Tidify app ("Tidify", "the app") uses, why, and the choices you have. Tidify is published by Halo Apps ("we", "us"). If you have any questions, email <a href="mailto:haloapps.dev@gmail.com">haloapps.dev@gmail.com</a>.</p>
 
@@ -29,6 +29,7 @@
         <li>The free version shows ads from Google AdMob. Google collects some device data to show and measure ads. Where the law requires it, personalised ads are only shown with your consent, and you can change your choice at any time.</li>
         <li>If the app crashes, Firebase Crashlytics (by Google) sends us a technical crash report. It never contains your photos.</li>
         <li>With your consent, Tidify sends usage statistics (Google Analytics for Firebase), including what its ads and purchases earn. These never contain your photos, file names or dates. You can turn them off in <em>Settings &rsaquo; Usage statistics</em>.</li>
+        <li>On Android, with your consent, Tidify tells Meta (Facebook) when the app is installed and opened and a few other steps (finishing the intro, the first clean-up, starting a free trial or buying Pro), so we can see which of our ads on Facebook and Instagram work. Your photos are never part of this.</li>
         <li>The optional "Tidify Pro" purchase is handled by Google Play or the Apple App Store. We never see your payment details.</li>
       </ul>
     </div>
@@ -76,6 +77,11 @@
 
     <p>Tidify also uses Firebase Remote Config, a service of Google, to adjust settings such as how often ads appear without releasing a new version. The app downloads these settings from Google; this uses a random Firebase installation identifier and sends no information about your photos.</p>
 
+    <h2>5a. Ad measurement (Meta app events, Android)</h2>
+    <p>We advertise Tidify on Facebook and Instagram. To learn which ads lead to installs, the Android app includes the Meta (Facebook) SDK for app events, a service of Meta Platforms Ireland Limited. It is off when the app starts and only switched on when usage statistics are on and, where GDPR applies, you agreed to storing information on your device (IAB TCF purpose 1), to measuring advertising performance (purpose 7) and to Meta as an ad partner in the consent form. Outside those regions it runs once the consent step has finished.</p>
+    <p>When it runs, it sends Meta: that the app was installed and opened; finishing the intro; the first clean-up (no counts of photos); opening the Pro offer and the screen it was opened from; which paywall test group the install is in; starting a free trial; and buying Pro (the product, price and currency). With these, the SDK sends the advertising ID, device and app information (model, operating system, language, app version) and your IP address. Meta uses this to attribute installs to its ads and to report and optimise our campaigns; Meta acts as an independent controller for some of it. It never contains your photos, videos, file names or anything else from your library, and Tidify does not use Facebook Login.</p>
+    <p>To stop it, turn off <em>Settings &rsaquo; Usage statistics</em>, withdraw consent in <em>Ad privacy choices</em>, or reset or delete your advertising ID in your phone's settings. See the <a href="https://www.facebook.com/privacy/policy/">Meta Privacy Policy</a>.</p>
+
     <h2>6. Purchases</h2>
     <p>The one-time "Tidify Pro" purchase is processed by Google Play Billing on Android, or by the Apple App Store on iOS, under their own terms and privacy policies (<a href="https://policies.google.com/privacy">Google</a>, <a href="https://www.apple.com/legal/privacy/">Apple</a>). We never receive your name, email address or payment details. The app only receives confirmation from the store that the purchase was made, and saves a "Pro" flag on your device. "Restore purchases" asks the store again.</p>
 
@@ -87,17 +93,17 @@
       <li>We do not require or offer an account.</li>
       <li>We do not sell your personal information.</li>
       <li>We do not collect your contacts, messages, precise location, files outside your photo library, microphone or camera data.</li>
-      <li>We do not share data with anyone other than the service providers described above.</li>
+      <li>We do not share data with anyone other than the service providers described above (Google and, for ad measurement on Android, Meta).</li>
     </ul>
 
     <h2>9. Legal bases (UK and EU GDPR)</h2>
     <p>Halo Apps is the controller for the processing described in this policy, Google is an independent controller for some advertising data and Google is our processor for Firebase. We rely on:</p>
     <ul>
-      <li><strong>consent</strong> for personalised advertising, usage statistics (Analytics) and, on iOS, tracking;</li>
+      <li><strong>consent</strong> for personalised advertising, usage statistics (Analytics), ad measurement with Meta and, on iOS, tracking;</li>
       <li><strong>legitimate interests</strong> for showing non-personalised ads that fund the free app, preventing ad fraud, and crash reporting to keep the app working;</li>
       <li><strong>performance of a contract</strong> for providing the Tidify Pro purchase you buy.</li>
     </ul>
-    <p>Google may process data in countries outside the UK and the EEA, including the United States, using safeguards recognised by law such as standard contractual clauses and the EU-US Data Privacy Framework and its UK extension.</p>
+    <p>Google and Meta may process data in countries outside the UK and the EEA, including the United States, using safeguards recognised by law such as standard contractual clauses and the EU-US Data Privacy Framework and its UK extension.</p>
 
     <h2>10. Your rights</h2>
     <p>Depending on where you live, you may have the right to access, correct, delete or restrict the use of your personal data, to object to its use, to data portability, and to withdraw consent at any time. Because Tidify has no account and we do not hold data linked to your identity, most of these rights are easiest to exercise with the controls above (in-app settings, your phone's ad settings, uninstalling the app) or directly with <a href="https://policies.google.com/privacy">Google</a>. You can also email us and we will help.</p>
