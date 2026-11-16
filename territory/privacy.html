@@ -109,8 +109,9 @@ sees your payment details. The app keeps only a note on your phone that
 Pro is on, and asks the store when it starts whether your purchase is
 still active. Which screens a new install sees is set by Firebase Remote
 Config, which gets an install ID but nothing about you. If you said yes
-to usage statistics, the "Pro bought" event says which plan (yearly or
-lifetime) and nothing more.</p>
+to usage statistics, Firebase records that a purchase was made (the
+product, price and currency) and the "Pro bought" event says which plan
+(yearly or lifetime), with no payment details.</p>
 
 <h2 id="notifications">Notifications</h2>
 <p>If you allow it, Territory schedules one reminder on your phone after
