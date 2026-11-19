@@ -17,10 +17,11 @@
   </header>
   <main class="wrap">
     <h1>Territory privacy policy</h1>
-    <p class="meta">Effective date: 9 November 2026 (updated 16 November 2026: Territory Pro purchases)</p>
+    <p class="meta">Effective date: 9 November 2026 (updated 19 November 2026: encrypted backup of your map)</p>
 <p><strong>In short:</strong> Territory plans walks from where you are,
 so it uses your location while the app is open. Your walk history and
-your fog map stay on your phone. To find streets outside the areas that
+your fog map stay on your phone, with an encrypted backup copy that only
+your phone can unlock. To find streets outside the areas that
 come with the app, it asks a map service for the area around you. If you rate a place or
 share a route, that is stored under a random ID with no name or email.
 Crash reports are on unless you turn them off; anonymous usage
@@ -60,7 +61,27 @@ reached, and the line you walked (that is what clears the fog).</li>
 <li>Which streets you have walked, your fog percentage and your
 settings.</li>
 </ul>
-<p>We never receive this. Uninstalling the app deletes it.</p>
+<p>We can't read this. Uninstalling the app deletes it from your phone
+(see the backup below).</p>
+
+<h2 id="backup">Encrypted backup of your map</h2>
+<p>So you don't lose your map if you delete the app or change phones,
+Territory keeps a backup copy of it: your finished walks, the streets you
+have walked, your fog and your settings. The copy is compressed and
+locked on your phone with AES-256-GCM before it is sent, and stored in
+our database (Firebase Realtime Database, europe-west1) under a random
+code, with no name, email or phone number.</p>
+<ul>
+<li>The key that unlocks it never leaves your phone. It is kept in the
+app's storage, on an iPhone also in the iCloud Keychain, and in the
+restore code shown in Settings &rsaquo; Backup. We don't have it, so we
+can't read your backup, and nobody who gets the stored copy can either.</li>
+<li>When you reinstall Territory, the app finds the key and brings your
+map back. On a new phone you can type the restore code. Keep the code
+private: anyone with it can restore your map.</li>
+<li>The backup is on by default. Turn off <em>Back up my map</em> in
+Settings &rsaquo; Backup and the copy is deleted from our database.</li>
+</ul>
 
 <h2 id="community">Ratings and shared routes</h2>
 <p>Territory signs each installation in anonymously (Firebase
@@ -131,7 +152,9 @@ href="https://firebase.google.com/support/privacy">Firebase privacy
 information</a>). The map services above are independent providers.</p>
 
 <h2 id="retention-and-deletion">Retention and deletion</h2>
-<p>Data on your phone is deleted when you uninstall the app. To delete
+<p>Data on your phone is deleted when you uninstall the app. Your
+encrypted backup is kept until you turn the backup off in Settings
+&rsaquo; Backup, which deletes it. To delete
 your ratings and shared routes from our database, email <a
 href="mailto:haloapps.dev@gmail.com">haloapps.dev@gmail.com</a> with your
 walker name or roughly when and where you shared a route; we delete them
@@ -147,6 +170,9 @@ set one, and roughly when and where you rated walks or shared routes, so
 we can find them.</li>
 <li>Within 30 days we delete your ratings, the "walked it" marks that go
 with them and your shared routes, and reply to confirm.</li>
+<li>To delete your encrypted backup, turn off Settings &rsaquo; Backup
+&rsaquo; Back up my map in the app; the copy is deleted at once. We can't
+find it by name because it is stored under a random code.</li>
 <li>To delete what is on your phone (your walks, your map and settings),
 uninstall Territory. On Android you can instead open Settings &rsaquo;
 Apps &rsaquo; Territory &rsaquo; Storage &rsaquo; Clear storage.</li>
