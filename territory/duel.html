@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fog duel · Territory</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="A friend challenged you to a fog duel on Territory: who clears more new streets this week?">
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; min-height: 100vh; background: linear-gradient(#0B1020, #1C2250); color: #EEF1FA;
+         font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; display: grid; place-items: center; }
+  main { max-width: 420px; padding: 32px 20px; text-align: center; }
+  .mark { letter-spacing: 3px; font-weight: 800; font-size: 14px; color: #B4BCD3; }
+  h1 { font-size: 30px; line-height: 1.15; margin: 18px 0 8px; }
+  .code { font: 700 44px/1 ui-monospace, Menlo, monospace; letter-spacing: 6px; color: #FFB547; margin: 22px 0 6px; }
+  button, a.store { display: block; width: 100%; box-sizing: border-box; margin: 10px 0; padding: 14px;
+         border-radius: 14px; border: 0; font: 700 17px system-ui, sans-serif; text-decoration: none; }
+  button { background: #242A37; color: #EEF1FA; border: 1px solid #2E3654; cursor: pointer; }
+  a.store { background: #48D8F0; color: #0F1424; }
+  p.small { color: #B4BCD3; font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="mark">TERRITORY</div>
+  <h1>You've been challenged to a fog duel</h1>
+  <p>Seven days. Whoever walks more new streets wins. Only names and numbers are compared, never your maps.</p>
+  <div class="code" id="code">······</div>
+  <button id="copy" type="button">Copy the code</button>
+  <a class="store" href="https://play.google.com/store/apps/details?id=com.haloapps.territory">Get it on Google Play</a>
+  <p class="small">Open Territory, then Your map › Fog duel. A code you've copied is filled in for you.</p>
+</main>
+<script>
+  var c = (location.hash || '').replace('#', '').toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 6);
+  if (c.length === 6) document.getElementById('code').textContent = c;
+  document.getElementById('copy').onclick = function () {
+    if (c.length !== 6) return;
+    var t = 'Territory fog duel code ' + c;
+    (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(function () {
+      document.getElementById('copy').textContent = 'Copied';
+    }, function () {});
+  };
+</script>
+</body>
+</html>
